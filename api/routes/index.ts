@@ -6,7 +6,7 @@ import { create } from 'https://deno.land/x/djwt@v2.2/mod.ts';
 export const router = new Router<AppState>();
 
 router
-	.get('/', authenticate, (ctx: Context) => {
+	.get('/', (ctx: Context) => {
 		ctx.response.body = `Hello, world!`;
 	})
 	.get('/login', async (ctx: Context) => {
@@ -59,7 +59,7 @@ router
 			.insert([{ name, content, author }]);
 		ctx.response.body = { success: data.status === 201, data: data.statusText };
 	})
-	.get('/read/:id', authenticate, async (ctx: Context) => {
+	.get('/read/:id', async (ctx: Context) => {
 		// get params from ctx
 		const id = ctx.request.url.searchParams.get('id');
 		const { supabase } = ctx.state;
