@@ -32,11 +32,12 @@ export type AppState = {
 	session: Session;
 	supabase: SupabaseClient;
 };
-
+// await supabase.from('cms_table').update({ name: 'test'}).eq('id', 23);
 const app = new Application<AppState>();
 const sessionStore = new MemoryStore();
 app.keys = ['super-secret-key'];
-app.use(oakCors());
+app.use(oakCors({
+}));
 app.use(
 	Session.initMiddleware(sessionStore, {
 		cookieSetOptions: {

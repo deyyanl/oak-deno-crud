@@ -351,6 +351,14 @@
     "https://deno.land/std@0.177.1/collections/without_all.ts": "a89f5da0b5830defed4f59666e188df411d8fece35a5f6ca69be6ca71a95c185",
     "https://deno.land/std@0.177.1/dotenv/load.ts": "0636983549b98f29ab75c9a22a42d9723f0a389ece5498fe971e7bb2556a12e2",
     "https://deno.land/std@0.177.1/dotenv/mod.ts": "8dcbc8a40b896a0bf094582aaeadbfc76d3528872faf2efc0302beb1d2f6afd0",
+    "https://deno.land/std@0.84.0/hash/sha1.ts": "1cca324b4b253885a47f121adafcfac55b4cc96113e22b338e1db26f37a730b8",
+    "https://deno.land/std@0.84.0/hash/sha256.ts": "2a06afd9c27942b87ffc8a93b3270065b5fe4ea144fe0939e5d050bfb86d40db",
+    "https://deno.land/std@0.84.0/hash/sha512.ts": "879e99a4c20d10ddadbe02a643a69565dfbabffc5fa7ddacff3ebcdb664b554c",
+    "https://deno.land/std@0.85.0/encoding/base64.ts": "e81fd4661e7af6711b1a03ed212617e1b1ff2999a11317655359cf9223bc6cce",
+    "https://deno.land/std@0.85.0/encoding/base64url.ts": "58e369ff130ac4b6d0661fe5189b93f839a91327b086f355c0ce0c74ec5e7c6c",
+    "https://deno.land/std@0.85.0/encoding/hex.ts": "f952e0727bddb3b2fd2e6889d104eacbd62e92091f540ebd6459317a61932d9b",
+    "https://deno.land/std@0.85.0/hash/sha256.ts": "2a06afd9c27942b87ffc8a93b3270065b5fe4ea144fe0939e5d050bfb86d40db",
+    "https://deno.land/std@0.85.0/hash/sha512.ts": "879e99a4c20d10ddadbe02a643a69565dfbabffc5fa7ddacff3ebcdb664b554c",
     "https://deno.land/x/cors@v1.2.2/abcCors.ts": "cdf83a7eaa69a1bf3ab910d18b9422217902fac47601adcaf0afac5a61845d48",
     "https://deno.land/x/cors@v1.2.2/attainCors.ts": "7d6aba0f942495cc31119604e0895c9bb8edd8f8baa7fe78e6c655bd0b4cbf59",
     "https://deno.land/x/cors@v1.2.2/cors.ts": "0e2d9167e3685f9bcf48f565e312b6e1883fa458f7337e5ce7bc2e3b29767980",
@@ -359,8 +367,32 @@
     "https://deno.land/x/cors@v1.2.2/oakCors.ts": "1348dc7673c61b85d2e80559a7b44f8e0246eaa6bcc6ec744fafe5d9b13b5c71",
     "https://deno.land/x/cors@v1.2.2/opineCors.ts": "fb5790115c26b7061d84b8d6c17d258a1e241bcab75b0bc3ca1fdb2e57bc5072",
     "https://deno.land/x/cors@v1.2.2/types.ts": "97546633ccc7f0df7a29bacba5d91dc6f61decdd1b65258300244dba905d34b8",
+    "https://deno.land/x/djwt@v2.2/algorithm.ts": "af7e185c74f5319e39eb82d52b4c315d74c9bd798aa098feb6f47a4bc181b584",
+    "https://deno.land/x/djwt@v2.2/deps.ts": "76d85d725ff951fc0f9eae0a06b434fa1259845caf45e398713dd77788b02692",
+    "https://deno.land/x/djwt@v2.2/mod.ts": "bc851108f645ed707a88a55a110948f35c00eb0c4c1c0a7d5bd271928b6c31ff",
+    "https://deno.land/x/djwt@v2.2/signature.ts": "ee591d5907d665c28e5687b1f18144ec604884fd2746d3baf81aa57a30698ffa",
     "https://deno.land/x/dotenv@v3.2.2/mod.ts": "077b48773de9205266a0b44c3c3a3c3083449ed64bb0b6cc461b95720678d38e",
     "https://deno.land/x/dotenv@v3.2.2/util.ts": "693730877b13f8ead2b79b2aa31e2a0652862f7dc0c5f6d2f313f4d39c7b7670",
+    "https://deno.land/x/god_crypto@v1.4.9/rsa.ts": "ccdac797dad64da4a0cd297b17fb987d6aa272c18568919c3365206912c20129",
+    "https://deno.land/x/god_crypto@v1.4.9/src/binary.ts": "f8c2ce60f9e0295cd54bbc3008cc4b388e919aa9128767d5f8e7eb4dd34fc8b4",
+    "https://deno.land/x/god_crypto@v1.4.9/src/hash.ts": "b23060d50aa0d2e4845ce3a68c6533ddfc573ca679a9848be233da04c15964d4",
+    "https://deno.land/x/god_crypto@v1.4.9/src/helper.ts": "e664a39ea7c3300765e5daeec4e55036b7fc810b27c7d806bd1ec24e19bc09b7",
+    "https://deno.land/x/god_crypto@v1.4.9/src/math.ts": "f31a80dd819892e13b451852e6ee64178a4f55929d42f23f38a14e1e325e48b8",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/basic_encoding_rule.ts": "913d06dc6afb7eb5a716964c44a9a99ee293d525ba66e171a6b88fd1fb5d34b9",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/common.ts": "fadd40b40e61fe1723d546019cc8d8c309803aba9e11dd446f2ed5df2c10ea14",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/eme_oaep.ts": "b6552ec4e53d1b360ba5639dd6dd8efe176586331e98ba9102a1ae5e71c427e2",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/emsa_pss.ts": "9dd89fbecb1f53bcb0dc6338d1b0448677d6f35e356b3b51ebc23ae48bbbcc9a",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/export_key.ts": "07c33f4ae7f276e8b99d944a3a05cef965674f481d411b97b67b0e49235f063f",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/import_key.ts": "4d9577e4b0313416f947c4359b0b8cb55002e036949a569287697ac591c1ad2f",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/mod.ts": "0ea65d6ac21e1f007812ea250b986b8f532ec49bc6b1eb87ef4a2cfc0425032b",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/primitives.ts": "a86659455e16274a384fd7ef23e63945ae8892c542997c544f7e03f073c4be81",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/rsa_internal.ts": "c8827374377a5b28087fa392070dfe7586b0eac6e4e3fae84dd901a57b1b7541",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/rsa_js.ts": "fbb4f4f564fb230bdb370e6fdbcd81b33c8e04c49181dfb6b9ef75106499648d",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/rsa_key.ts": "1a729b884d0a09c50a5f6d68e9e13d07f1be7f1092a59486699d7c952ab7ca86",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/rsa_wc.ts": "614624a1d222d42192bc3c9da1e9656e88f921f5e8c24171567fdac90036337e",
+    "https://deno.land/x/god_crypto@v1.4.9/src/rsa/rsassa_pss.ts": "14987aab6b69fb5d9056bf260c722cc91376e34edb53ee30f38541ab5f7a2260",
+    "https://deno.land/x/god_crypto@v1.4.9/src/utility/asn1.ts": "91b4d357a3b3bca4c0c0d26e876061bf803e04e5f0bd418d35426d1858f9aaf8",
+    "https://deno.land/x/god_crypto@v1.4.9/src/utility/encode.ts": "2865eb23bceea73fde3e0d1c13254bc30d9144606fda30ae009fbf33e5c881a3",
     "https://deno.land/x/mongo@v0.29.4/deps.ts": "17ed6e0be6ba428c4f162764fc24c20cddf8419b88235fa8ce10a40627253ba0",
     "https://deno.land/x/mongo@v0.29.4/mod.ts": "0989f34d08c40440b8786140abdaf863e964e23df5d1a80e661d3d4170d9d21e",
     "https://deno.land/x/mongo@v0.29.4/src/auth/base.ts": "7fe14cf0a63d6bbc4ba69a000a04b3b184d26842504d94652a6af2d0c9494944",
@@ -532,6 +564,7 @@
     "https://deno.land/x/web_bson@v0.2.1/utils.ts": "4c51c0be4bbb77c1e547eeef9b5aa53ffa611f628684875375103f627649ceb1",
     "https://deno.land/x/xhr@0.3.0/mod.ts": "094aacd627fd9635cd942053bf8032b5223b909858fa9dc8ffa583752ff63b20",
     "https://esm.sh/@supabase/supabase-js@2.22.0": "cf2a9ce322462a7249832d85fa0517e0cb5decbfd59dcf94156ea4b55678d0e0",
+    "https://esm.sh/@supabase/supabase-js@2.23.0": "90e44e91f1faf7ed347e1eeb94504ba0d8158cf8c1a234c240791f634b8e4ee5",
     "https://esm.sh/v124/@supabase/functions-js@2.1.1/deno/functions-js.mjs": "95b3793a37e9173dc2a786f6a12cc537c15d73d0397a5ae731cde9d8b2aa6faa",
     "https://esm.sh/v124/@supabase/functions-js@2.1.1/dist/module/FunctionsClient.d.ts": "c2e7bcf24374e6b99863f214eeef71e13d2c271039b48c9052c97f0cb3a16950",
     "https://esm.sh/v124/@supabase/functions-js@2.1.1/dist/module/index.d.ts": "1832b08edacd73b343430314bdf7af9ce456373fa3c5235b8dcdbbdf4e1d13ae",
@@ -544,6 +577,14 @@
     "https://esm.sh/v124/@supabase/gotrue-js@2.27.0/dist/module/lib/fetch.d.ts": "0124365bdd93bdaefc37112cad6eafefdb01ae36c657770a64df7dbf5f305342",
     "https://esm.sh/v124/@supabase/gotrue-js@2.27.0/dist/module/lib/helpers.d.ts": "5ecb2cb22300da6b8f8f0a7c6ee8e1a6920ef274b2d2f4370320902f1950f363",
     "https://esm.sh/v124/@supabase/gotrue-js@2.27.0/dist/module/lib/types.d.ts": "d44363f6c956a77b51c8197b2929be7d762e5287cfe18d9735ee69745ef62160",
+    "https://esm.sh/v124/@supabase/gotrue-js@2.27.2/deno/gotrue-js.mjs": "cc34461b79ed18ea98d8862a28b0a06a1b60670913b608e5b9af7d38ea9801db",
+    "https://esm.sh/v124/@supabase/gotrue-js@2.27.2/dist/module/GoTrueAdminApi.d.ts": "b65243c1c313802cb84148d6f2de44f58b730b24b7812434d23c4120ddf8cafb",
+    "https://esm.sh/v124/@supabase/gotrue-js@2.27.2/dist/module/GoTrueClient.d.ts": "dd487c4a502e20746a3495d9d98cb855d6125cbcaec9cabf3fda1ade47221219",
+    "https://esm.sh/v124/@supabase/gotrue-js@2.27.2/dist/module/index.d.ts": "8cdbab5746a3ce56786025593191032aeb560f933279507c260d2bb65e83b636",
+    "https://esm.sh/v124/@supabase/gotrue-js@2.27.2/dist/module/lib/errors.d.ts": "c472599ecee0d5a06e22629d18e9e2eac44139f98301fe2ba0389c3209d80ff5",
+    "https://esm.sh/v124/@supabase/gotrue-js@2.27.2/dist/module/lib/fetch.d.ts": "0124365bdd93bdaefc37112cad6eafefdb01ae36c657770a64df7dbf5f305342",
+    "https://esm.sh/v124/@supabase/gotrue-js@2.27.2/dist/module/lib/helpers.d.ts": "5ecb2cb22300da6b8f8f0a7c6ee8e1a6920ef274b2d2f4370320902f1950f363",
+    "https://esm.sh/v124/@supabase/gotrue-js@2.27.2/dist/module/lib/types.d.ts": "6c72ff7fc3ccb9342a4d0360942ff5c3b4fdfa3f8a060252d5eae9f267248f97",
     "https://esm.sh/v124/@supabase/postgrest-js@1.6.1/deno/postgrest-js.mjs": "9adb6fe48d69c2215e61cc7a09cdedc65885b9ddfd88d40a45c95f015b4494bd",
     "https://esm.sh/v124/@supabase/postgrest-js@1.6.1/dist/module/PostgrestBuilder.d.ts": "ee10b40dfca08fccf846e2d4f21e1273dd6170629e04e8454937b79c4a073195",
     "https://esm.sh/v124/@supabase/postgrest-js@1.6.1/dist/module/PostgrestClient.d.ts": "70bddc51d63d92a5f6817be70f4e0d232c6758b425792adb6a9912844aa18747",
@@ -553,6 +594,15 @@
     "https://esm.sh/v124/@supabase/postgrest-js@1.6.1/dist/module/index.d.ts": "fffbd398e6b4db2b1320e819d395493f3169219cfec082e09787ae2bb02baaa3",
     "https://esm.sh/v124/@supabase/postgrest-js@1.6.1/dist/module/select-query-parser.d.ts": "0a7efc7f0c36eb5accafa57c84863f4f0ac708f630a55c8e753baff5f6482e86",
     "https://esm.sh/v124/@supabase/postgrest-js@1.6.1/dist/module/types.d.ts": "b62bb9fdf20676f829bcf01b2348c9766b5d14a0451a964496e96ac49fcc2758",
+    "https://esm.sh/v124/@supabase/postgrest-js@1.7.0/deno/postgrest-js.mjs": "e7d044477ba0e0f4d8ae68b9cf9490828e41b3e30c54b01fed78d96de8b69881",
+    "https://esm.sh/v124/@supabase/postgrest-js@1.7.0/dist/module/PostgrestBuilder.d.ts": "ee10b40dfca08fccf846e2d4f21e1273dd6170629e04e8454937b79c4a073195",
+    "https://esm.sh/v124/@supabase/postgrest-js@1.7.0/dist/module/PostgrestClient.d.ts": "70bddc51d63d92a5f6817be70f4e0d232c6758b425792adb6a9912844aa18747",
+    "https://esm.sh/v124/@supabase/postgrest-js@1.7.0/dist/module/PostgrestFilterBuilder.d.ts": "1b2934af0d34dd2501e7336c09ae6dedd89772739f714c8f03680965d0c264e9",
+    "https://esm.sh/v124/@supabase/postgrest-js@1.7.0/dist/module/PostgrestQueryBuilder.d.ts": "438f51f19e22fbe512111f69ec3e1978b18eaaac1c31cbbaa45faa45fa933f37",
+    "https://esm.sh/v124/@supabase/postgrest-js@1.7.0/dist/module/PostgrestTransformBuilder.d.ts": "965a3d89daa3b630e6f53ebc1494865f56724b787f4a4420e58fa5f80c387d40",
+    "https://esm.sh/v124/@supabase/postgrest-js@1.7.0/dist/module/index.d.ts": "fffbd398e6b4db2b1320e819d395493f3169219cfec082e09787ae2bb02baaa3",
+    "https://esm.sh/v124/@supabase/postgrest-js@1.7.0/dist/module/select-query-parser.d.ts": "ebfe9fac6290bec4b0e5b038504c496fb0867a2ff2c6d267ceac09256dc339a0",
+    "https://esm.sh/v124/@supabase/postgrest-js@1.7.0/dist/module/types.d.ts": "b62bb9fdf20676f829bcf01b2348c9766b5d14a0451a964496e96ac49fcc2758",
     "https://esm.sh/v124/@supabase/realtime-js@2.7.2/deno/dist/module/RealtimeChannel.js": "ad331a64fb496f909ae60913d6b00223384d6556bd9b9391ba2724128f9a9bd9",
     "https://esm.sh/v124/@supabase/realtime-js@2.7.2/deno/dist/module/RealtimeClient.js": "9a67efa42c8fc3e0ace74114788fbb397033b95b48e0c3f5d06f6d50e8fd0001",
     "https://esm.sh/v124/@supabase/realtime-js@2.7.2/deno/dist/module/RealtimePresence.js": "ad6453c5fd6fc2bb0dcca9890f5a0c6de8b5a60b1f8cdaea1d40aa06b80cc013",
@@ -587,6 +637,11 @@
     "https://esm.sh/v124/@supabase/supabase-js@2.22.0/dist/module/index.d.ts": "cf7fa6bb978d4d33a438e4e506079b81fd9cf497bde83a18febd59bd8402bfe9",
     "https://esm.sh/v124/@supabase/supabase-js@2.22.0/dist/module/lib/SupabaseAuthClient.d.ts": "d296e62e9b80e5419d12299fe8402b32dc25098fecab71775669dbdfa7b009c9",
     "https://esm.sh/v124/@supabase/supabase-js@2.22.0/dist/module/lib/types.d.ts": "a91f9fd8e47f5664cd8151e7fff76bbb115bd1a49f0c8ef3edb7d17f61c84eb1",
+    "https://esm.sh/v124/@supabase/supabase-js@2.23.0/deno/supabase-js.mjs": "39704dd80a059da82106b80dc199919e7f1e3b5ebc9daa0c61662aab66e3a06a",
+    "https://esm.sh/v124/@supabase/supabase-js@2.23.0/dist/module/SupabaseClient.d.ts": "50bb1afb961d278fb2c48a4861c44f47f0827bac8cbf305c3ab754de54f0ee9f",
+    "https://esm.sh/v124/@supabase/supabase-js@2.23.0/dist/module/index.d.ts": "d449e0fcc1f11cd89216b2dee523a49c0beb05b5852cf10b543d1571a86b0881",
+    "https://esm.sh/v124/@supabase/supabase-js@2.23.0/dist/module/lib/SupabaseAuthClient.d.ts": "3f0ee3378c85be25304edeb875c0c46f79a621fb130e776a98b945066599d62a",
+    "https://esm.sh/v124/@supabase/supabase-js@2.23.0/dist/module/lib/types.d.ts": "2d29296a1df173ed254b0ac932c1c4a9d9b0e4e26507801b74e555c73ab68b60",
     "https://esm.sh/v124/@types/phoenix@1.5.6/index.d.ts": "2b9f54bc632b077439fa3fb07a9daf30a77c668c27ef2ea14d3382acb445aca3",
     "https://esm.sh/v124/cross-fetch@3.1.6/deno/cross-fetch.mjs": "d6cb828e4abb2641fb8f58a910adac08f46102db9cb209994e656c86111d90e8",
     "https://esm.sh/v124/es5-ext@0.10.62/deno/global.js": "5fe45a955818afd1e0e8ad67eeb50f62a4b543588aefd727a1f9b732121a33fa",
@@ -598,6 +653,7 @@
       "@types/js-cookie@^3.0.3": "@types/js-cookie@3.0.3",
       "@vitejs/plugin-react@^3.0.1": "@vitejs/plugin-react@3.1.0_vite@4.3.8_@babel+core@7.21.8",
       "js-cookie@^3.0.3": "js-cookie@3.0.5",
+      "jwt-decode@latest": "jwt-decode@3.1.2",
       "react-cookie": "react-cookie@4.1.1_react@18.2.0",
       "react-cookie@^4.0.1": "react-cookie@4.1.1_react@18.2.0",
       "react-cookie@^4.1.1": "react-cookie@4.1.1_react@18.2.0",
@@ -605,6 +661,8 @@
       "react-router-dom@^6.4": "react-router-dom@6.11.2_react@18.2.0_react-dom@18.2.0__react@18.2.0",
       "react-router-dom@latest": "react-router-dom@6.11.2_react@18.2.0_react-dom@18.2.0__react@18.2.0",
       "react@^18.2.0": "react@18.2.0",
+      "redux-react-session@2.6.1": "redux-react-session@2.6.1_react@16.14.0_redux@4.2.1",
+      "redux@^4.2.1": "redux@4.2.1",
       "swr": "swr@2.1.5_react@18.2.0",
       "swr@latest": "swr@2.1.5_react@18.2.0",
       "universal-cookie@latest": "universal-cookie@4.0.4",
@@ -766,6 +824,12 @@
         "dependencies": {
           "@babel/core": "@babel/core@7.21.8",
           "@babel/helper-plugin-utils": "@babel/helper-plugin-utils@7.21.5"
+        }
+      },
+      "@babel/runtime@7.22.3": {
+        "integrity": "sha512-XsDuspWKLUsxwCp6r7EhsExHtYfbe5oAGQ19kqngTdCPUoPQzOPdUbD/pB9PJiwb2ptYKQDjSJT3R6dC+EPqfQ==",
+        "dependencies": {
+          "regenerator-runtime": "regenerator-runtime@0.13.11"
         }
       },
       "@babel/template@7.21.9": {
@@ -1080,6 +1144,18 @@
           "react-is": "react-is@16.13.1"
         }
       },
+      "immediate@3.0.6": {
+        "integrity": "sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==",
+        "dependencies": {}
+      },
+      "is-promise@2.2.2": {
+        "integrity": "sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==",
+        "dependencies": {}
+      },
+      "js-cookie@2.2.0": {
+        "integrity": "sha512-7YAJP/LPE/MhDjHIdfIiT665HUSumCwPN2hAmO6OJZ8V3o1mtz2HeQ8BKetEjkh+3nqGxYaq1vPMViUR8kaOXw==",
+        "dependencies": {}
+      },
       "js-cookie@3.0.5": {
         "integrity": "sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==",
         "dependencies": {}
@@ -1095,6 +1171,22 @@
       "json5@2.2.3": {
         "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==",
         "dependencies": {}
+      },
+      "jwt-decode@3.1.2": {
+        "integrity": "sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==",
+        "dependencies": {}
+      },
+      "lie@3.1.1": {
+        "integrity": "sha512-RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKHNeEwffDYbF//u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw==",
+        "dependencies": {
+          "immediate": "immediate@3.0.6"
+        }
+      },
+      "localforage@1.7.3": {
+        "integrity": "sha512-1TulyYfc4udS7ECSBT2vwJksWbkwwTX8BzeUIiq8Y07Riy7bDAAnxDaPU/tWyOVmQAcWJIEIFP9lPfBGqVoPgQ==",
+        "dependencies": {
+          "lie": "lie@3.1.1"
+        }
       },
       "loose-envify@1.4.0": {
         "integrity": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==",
@@ -1126,6 +1218,10 @@
         "integrity": "sha512-QzsYKWhXTWx8h1kIvqfnC++o0pEmpRQA/aenALsL2F4pqNVr7YzcdMlDij5WBnwftRbJCNJL/O7zdKaxKPHqgQ==",
         "dependencies": {}
       },
+      "object-assign@4.1.1": {
+        "integrity": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==",
+        "dependencies": {}
+      },
       "picocolors@1.0.0": {
         "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==",
         "dependencies": {}
@@ -1136,6 +1232,14 @@
           "nanoid": "nanoid@3.3.6",
           "picocolors": "picocolors@1.0.0",
           "source-map-js": "source-map-js@1.0.2"
+        }
+      },
+      "prop-types@15.8.1": {
+        "integrity": "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==",
+        "dependencies": {
+          "loose-envify": "loose-envify@1.4.0",
+          "object-assign": "object-assign@4.1.1",
+          "react-is": "react-is@16.13.1"
         }
       },
       "react-cookie@4.1.1_react@18.2.0": {
@@ -1179,11 +1283,39 @@
           "react": "react@18.2.0"
         }
       },
+      "react@16.14.0": {
+        "integrity": "sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==",
+        "dependencies": {
+          "loose-envify": "loose-envify@1.4.0",
+          "object-assign": "object-assign@4.1.1",
+          "prop-types": "prop-types@15.8.1"
+        }
+      },
       "react@18.2.0": {
         "integrity": "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==",
         "dependencies": {
           "loose-envify": "loose-envify@1.4.0"
         }
+      },
+      "redux-react-session@2.6.1_react@16.14.0_redux@4.2.1": {
+        "integrity": "sha512-DmNN/msw9l/TIqtrZV87fKWr6hJaBD0T8qN2A2jhVBKuB7fWSYBvnYwsO7zYZ96Tnlpf4pdiS0bAeph0i9DnnQ==",
+        "dependencies": {
+          "is-promise": "is-promise@2.2.2",
+          "js-cookie": "js-cookie@2.2.0",
+          "localforage": "localforage@1.7.3",
+          "react": "react@16.14.0",
+          "redux": "redux@4.2.1"
+        }
+      },
+      "redux@4.2.1": {
+        "integrity": "sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==",
+        "dependencies": {
+          "@babel/runtime": "@babel/runtime@7.22.3"
+        }
+      },
+      "regenerator-runtime@0.13.11": {
+        "integrity": "sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==",
+        "dependencies": {}
       },
       "rollup@3.23.0": {
         "integrity": "sha512-h31UlwEi7FHihLe1zbk+3Q7z1k/84rb9BSwmBSr/XjOCEaBJ2YyedQDuM0t/kfOS0IxM+vk1/zI9XxYj9V+NJQ==",

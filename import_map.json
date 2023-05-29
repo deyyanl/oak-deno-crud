@@ -1,5 +1,14 @@
 {
     "imports": {
-      "react": "https://esm.sh/react@^18.2.0"
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom": "https://esm.sh/react-dom@latest",
+      "react-router-dom": "https://esm.sh/react-router-dom@latest",
+      "react-redux": "https://esm.sh/react-redux@latest",
+      "redux": "https://esm.sh/redux@latest",
+      "react-router": "https://esm.sh/react-router@latest",
+      "redux-react-session": "https://esm.sh/redux-react-session@latest",
+      "redux-thunk": "https://esm.sh/redux-thunk@latest",
+      "jwt-decode": "https://esm.sh/jwt-decode@latest",
+      "swr": "https://esm.sh/swr@latest"
     }
   }

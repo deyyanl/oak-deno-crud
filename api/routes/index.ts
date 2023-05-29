@@ -49,10 +49,9 @@ router
 			},
 			'secret'
 		);
-		ctx.cookies.set('user', jwt, { httpOnly: true });
-		ctx.response.redirect(`http://localhost:5173`);
+		ctx.response.redirect(`http://localhost:5173?code=${jwt}`);
 	})
-	.post('/create', authenticate, async (ctx: Context) => {
+	.post('/create', async (ctx: Context) => {
 		const { name, content, author } = await ctx.request.body().value;
 		const { supabase } = ctx.state;
 		const data = await supabase
@@ -67,23 +66,24 @@ router
 		const data = await supabase.from('cms_table').select('*').match({ id });
 		ctx.response.body = { success: data.status === 201, data };
 	})
-	.get('/read', authenticate, async (ctx: Context) => {
+	.get('/read', async (ctx: Context) => {
 		const { supabase } = ctx.state;
 		const data = await supabase.from('cms_table').select('*');
 		ctx.response.body = { success: data.status === 201, data: data.data };
 	})
-	.put('/update/:id', authenticate, async (ctx: Context) => {
-		const id = ctx.request.url.searchParams.get('id');
-		const { name, content } = await ctx.request.body().value;
+	.put('/update/:id', async (ctx: Context) => {
+		const id = ctx.params.id;
+		const { name } = await ctx.request.body().value;
+		console.log(id, name);
 		const { supabase } = ctx.state;
 		const data = await supabase
 			.from('cms_table')
-			.update({ name, content })
-			.match({ id });
+			.update({ name: name })
+			.eq('id', id);
 		// in this case 204 is indicating a success
 		ctx.response.body = { success: data.status === 204, data: data.statusText };
 	})
-	.delete('/delete/:id', authenticate, async (ctx: any) => {
+	.delete('/delete/:id', async (ctx: any) => {
 		const id = ctx.params.id;
 		const { supabase } = ctx.state;
 		const data = await supabase.from('cms_table').delete().match({ id });

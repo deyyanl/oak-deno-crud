@@ -1,12 +1,11 @@
-const Home = () => {
-	return (
-		<>
-			<div>
-				<h1>Welcome to the Dinosaur app</h1>
-				<p>Click on a dinosaur below to learn more.</p>
-			</div>
-		</>
-	);
-};
+import * as React from 'react';
+import { Navigation } from "../App.tsx";
 
+const Home = () => {
+    return (
+        <>                
+        <h1>Home</h1>
+        </>
+    );
+};
 export default Home;
