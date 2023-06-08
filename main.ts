@@ -5,8 +5,6 @@ import {
 } from 'https://deno.land/x/oak_sessions@v4.0.5/mod.ts';
 import { OAuth2Client } from 'https://deno.land/x/oauth2_client/mod.ts';
 
-import { createPost, getPosts } from './services/db.ts';
-
 import { router } from './routes/index.ts';
 import { load } from 'https://deno.land/std@0.177.1/dotenv/mod.ts';
 import { oakCors } from 'https://deno.land/x/cors@v1.2.2/mod.ts';

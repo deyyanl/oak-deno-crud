@@ -2,8 +2,8 @@ import { Post } from '../shared/api.ts';
 
 const kv = await Deno.openKv();
 
-export const createPost = async ({ id, name, content, author }: Post) => {
-	return await kv.set(['posts', id], { name, content, author });
+export const createPost = async ({ name, content, author }: Post) => {
+	return await kv.set(['posts', name], { name, content, author });
 };
 
 export const getPost = async (name: string) => {
