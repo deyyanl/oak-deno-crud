@@ -5,17 +5,14 @@ import {
 } from 'https://deno.land/x/oak_sessions@v4.0.5/mod.ts';
 import { OAuth2Client } from 'https://deno.land/x/oauth2_client/mod.ts';
 
-import {
-	createClient,
-	SupabaseClient,
-} from 'https://esm.sh/@supabase/supabase-js';
+import { createPost, getPosts } from './services/db.ts';
+
 import { router } from './routes/index.ts';
-import { load } from "https://deno.land/std@0.177.1/dotenv/mod.ts";
-import { oakCors } from "https://deno.land/x/cors@v1.2.2/mod.ts";
-const env = await load({ envPath: "/Users/deyyanl/Projects/oak/oak-deno-crud/.env" }); 
-const supabaseUrl = env['SUPABASE_URL'];
-const supabaseKey = env['SUPABASE_KEY'];
-const supabase = createClient(String(supabaseUrl), String(supabaseKey));
+import { load } from 'https://deno.land/std@0.177.1/dotenv/mod.ts';
+import { oakCors } from 'https://deno.land/x/cors@v1.2.2/mod.ts';
+const env = await load({
+	envPath: '/Users/deyyanl/Projects/oak/oak-deno-crud/.env',
+});
 
 export const oauth2Client = new OAuth2Client({
 	clientId: env['CLIENT_ID'],
@@ -30,14 +27,11 @@ export const oauth2Client = new OAuth2Client({
 
 export type AppState = {
 	session: Session;
-	supabase: SupabaseClient;
 };
-// await supabase.from('cms_table').update({ name: 'test'}).eq('id', 23);
 const app = new Application<AppState>();
 const sessionStore = new MemoryStore();
 app.keys = ['super-secret-key'];
-app.use(oakCors({
-}));
+app.use(oakCors({}));
 app.use(
 	Session.initMiddleware(sessionStore, {
 		cookieSetOptions: {
@@ -54,10 +48,8 @@ app.use(
 	})
 );
 
-app.use((ctx, next) => {
-	ctx.state.supabase = supabase; // Add the Supabase client to the application state
-	return next();
-});
 app.use(router.allowedMethods(), router.routes());
 
 await app.listen({ port: 8000 });
+// console.log(await createPost({ name: 'asdsad', content: 'asdasd', author: 'asdsd' }));
+// console.log(await getPosts());

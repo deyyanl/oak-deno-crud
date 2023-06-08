@@ -1,7 +1,6 @@
 import { Context, Router } from 'https://deno.land/x/oak@v11.1.0/mod.ts';
 import { AppState, oauth2Client } from '../main.ts';
-import { authenticate } from '../utils/auth.ts';
-import { create } from 'https://deno.land/x/djwt@v2.2/mod.ts';
+import { createPost, deletePost, getPost, getPosts, updatePost } from '../services/db.ts';
 
 export const router = new Router<AppState>();
 
@@ -53,41 +52,29 @@ router
 	})
 	.post('/create', async (ctx: Context) => {
 		const { name, content, author } = await ctx.request.body().value;
-		const { supabase } = ctx.state;
-		const data = await supabase
-			.from('cms_table')
-			.insert([{ name, content, author }]);
-		ctx.response.body = { success: data.status === 201, data: data.statusText };
+		const post = await createPost({ name, content, author });
+		ctx.response.body = { success: post.ok };
 	})
-	.get('/read/:id', async (ctx: Context) => {
+	.get('/read/:name', async (ctx: Context) => {
 		// get params from ctx
-		const id = ctx.request.url.searchParams.get('id');
-		const { supabase } = ctx.state;
-		const data = await supabase.from('cms_table').select('*').match({ id });
-		ctx.response.body = { success: data.status === 201, data };
+		const name = ctx.params.name;
+		const post = await getPost(name);
+		ctx.response.body = { success: !!post, data: post };
 	})
 	.get('/read', async (ctx: Context) => {
-		const { supabase } = ctx.state;
-		const data = await supabase.from('cms_table').select('*');
-		ctx.response.body = { success: data.status === 201, data: data.data };
+		const posts = await getPosts();
+		ctx.response.body = { success: !!posts, data: posts };
 	})
-	.put('/update/:id', async (ctx: Context) => {
-		const id = ctx.params.id;
-		const { name } = await ctx.request.body().value;
-		console.log(id, name);
-		const { supabase } = ctx.state;
-		const data = await supabase
-			.from('cms_table')
-			.update({ name: name })
-			.eq('id', id);
-		// in this case 204 is indicating a success
-		ctx.response.body = { success: data.status === 204, data: data.statusText };
+	.put('/update/:name', async (ctx: Context) => {
+		const name = ctx.params.name;
+		const { content, author } = await ctx.request.body().value;
+		const post = await updatePost(name, content, author);
+		ctx.response.body = { success: post?.ok || false };
 	})
-	.delete('/delete/:id', async (ctx: any) => {
-		const id = ctx.params.id;
-		const { supabase } = ctx.state;
-		const data = await supabase.from('cms_table').delete().match({ id });
-		ctx.response.body = { success: data.status === 204, data };
+	.delete('/delete/:name', async (ctx: any) => {
+		const name = ctx.params.name;
+		const post = await deletePost(name);
+		ctx.response.body = { success: post };
 	})
 	.get('/logout', async (ctx: Context) => {
 		// Destroy the user session
